@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './List.css';
 
 class List extends Component {
@@ -11,7 +12,9 @@ class List extends Component {
           {
             data.map((item, i) => (
               <li className="list-item" key={i}>
-                { item.title }
+                <Link to={ item.path }>
+                  { item.title }
+                </Link>
               </li>
             ))
           }

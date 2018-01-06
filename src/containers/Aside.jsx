@@ -8,7 +8,7 @@ class Aside extends Component {
   render() {
     const renderLists = RxExampleCategories.map((category, i) => {
       const data = RxExamples.filter(example => example.categoryID === category.id);
-      return <List caption={ category.title } data={data} />
+      return <List key={i} caption={ category.title } data={data} />
     })
 
     return (

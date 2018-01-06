@@ -1,0 +1,7 @@
+.Main {
+  display: inline-block;
+  width: calc(100vw - 250pt);
+  height: 100vh;
+  background-color: #555;
+  vertical-align: top;
+}
