@@ -1,0 +1,34 @@
+.List + .List {
+  margin-top: 10pt;
+}
+
+.List > h3 {
+  box-sizing: border-box;
+  border-left: 5pt solid #777;
+  padding-left: 5pt;
+  margin: 0;
+  background-color: #444;
+  height: 30pt;
+  line-height: 30pt;
+  transition: .25s;
+}
+.List > h3:hover {
+  transition: .25s;
+  border-left: 15pt solid #777;
+}
+.List > ul {
+  margin: 0;
+  padding: 0;
+}
+.List > ul > li {
+  list-style-type: none;
+  height: 25pt;
+  line-height: 25pt;
+  border-left: 5pt solid transparent;
+  padding-left: 5pt;
+  transition: .25s;
+}
+.List > ul > li:hover {
+  border-left: 15pt solid #555;
+  transition: .25s;
+}
