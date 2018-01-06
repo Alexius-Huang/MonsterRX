@@ -46,5 +46,17 @@ export const RxExamples = [
     title: 'Video Popout with Scroll',
     path: '/video-popout-with-scroll',
     categoryID: 3
+  },
+  {
+    id: 8,
+    title: 'Pause & Resume',
+    path: '/pause-and-resume',
+    categoryID: 2
+  },
+  {
+    id: 9,
+    title: 'Auto-Typer with Pause-Resume',
+    path: '/auto-typer-and-pause-resume',
+    categoryID: 3
   }
 ];

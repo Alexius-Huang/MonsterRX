@@ -5,6 +5,8 @@ import AutoSearch from './AutoSearch';
 import Cancellable from './Cancellable';
 import AutoRetry from './AutoRetry';
 import VideoPopOutWithScroll from './VideoPopOutWithScroll';
+import PauseResume from './PauseResume';
+import AutoTyperPauseResume from './AutoTyperPauseResume';
 
 const Pages = [
   { component: DragAndDrop, path: '/drag-and-drop' },
@@ -13,7 +15,9 @@ const Pages = [
   { component: AutoSearch,  path: '/auto-search' },
   { component: Cancellable, path: '/cancellable' },
   { component: AutoRetry,   path: '/auto-retry' },
-  { component: VideoPopOutWithScroll, path: '/video-popout-with-scroll' }
+  { component: VideoPopOutWithScroll, path: '/video-popout-with-scroll' },
+  { component: PauseResume, path: '/pause-and-resume' },
+  { component: AutoTyperPauseResume, path: '/auto-typer-and-pause-resume' },
 ];
 
 export default Pages;

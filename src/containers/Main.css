@@ -4,13 +4,13 @@
   height: 100vh;
   background-color: #555;
   vertical-align: top;
+  overflow-y: auto;
 }
 
 .Main > div > .content {
   box-sizing: border-box;
   width: 100%;
   padding: 30pt 40pt;
-  overflow-y: auto;
 }
 
 .Main > div > .content > .row {
@@ -31,4 +31,8 @@
 
 .Main > div > .content > .row > .full {
   width: 100%;
+}
+
+.Main > div > .content > .row + .row {
+  margin-top: 20pt;
 }

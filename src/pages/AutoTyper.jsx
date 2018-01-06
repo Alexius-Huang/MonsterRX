@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../components/Title';
+import Caption from '../components/Caption';
 import Code from '../components/Code';
 import Rx from 'rxjs';
 import './AutoTyper.css';
@@ -73,6 +74,7 @@ class AutoTyper extends Component {
         <Title>Auto Typer Example</Title>
 
         <div className="content">
+          <Caption>Auto Typer Example</Caption>
           <div className="row">
             <div className="half demo">
               <Code ref="codeBlock">{ this.state.currentText }</Code>
@@ -82,6 +84,8 @@ class AutoTyper extends Component {
               <Code>{ AutoTyperCode[0] }</Code>
             </div>
           </div>
+
+          <Caption>Auto Typer with Repeat</Caption>
           <div className="row">
             <div className="half"></div>
             <div className="half">

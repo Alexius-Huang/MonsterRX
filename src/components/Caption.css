@@ -1,0 +1,9 @@
+.Caption {
+  margin: 10pt 15pt;
+  height: 50pt;
+  line-height: 50pt;
+  border-left: 25pt solid #444;
+  border-bottom: 3pt solid #444;
+  padding-left: 15pt;
+  box-sizing: border-box;
+}

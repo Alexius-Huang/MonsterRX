@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../components/Title';
+import Caption from '../components/Caption';
 import Code from '../components/Code';
 import CSSColors from '../resources/CSSColors';
 import AutoSearchCode from '../resources/code/AutoSearchCode';
@@ -77,6 +78,8 @@ class AutoSearch extends Component {
         <Title>Auto Search Example</Title>
 
         <div className="content">
+          <Caption>Auto Search Example</Caption>
+
           <div className="row">
             <div className="half demo">
               <input
@@ -101,7 +104,11 @@ class AutoSearch extends Component {
               <Code>{ AutoSearchCode }</Code>
             </div>
           </div>
-          
+
+          <Caption>Auto Search with Maximum Search Result</Caption>
+          <div className="row">
+            <div className="full">Working in Progress...</div>
+          </div>
         </div>
       </div>
     );
