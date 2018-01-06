@@ -4,7 +4,6 @@
 
 ## About
 
-![Display Image](./images/img-01.png)
 This project aims at learning RxJS from a series of example to realize different kind of UX application. You can clone it down, and following the instruction to open this page and play around with the code.
 
 ```
@@ -19,3 +18,11 @@ $ yarn start
 ```
 
 Navigation to the `http://localhost:3000` then well done!
+
+## Screenshots
+
+![Display Image](./images/img-01.png)
+
+![Display Image](./images/img-02.png)
+
+![Display Image](./images/img-03.png)
