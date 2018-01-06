@@ -24,22 +24,32 @@ class AutoSearch extends Component {
     const cancelBtnElement = document.getElementById('auto-search-cancel-btn');
     const rerunBtnElement = document.getElementById('auto-search-rerun-btn');
 
+    const CSSColors$ = Rx.Observable.from(CSSColors);
+
     const input$ = Rx.Observable.fromEvent(inputElement, 'input');
     const focus$ = Rx.Observable.fromEvent(inputElement, 'focus');
     const cancel$ = Rx.Observable.fromEvent(cancelBtnElement, 'click');
     const rerun$ = Rx.Observable.fromEvent(rerunBtnElement, 'click');
     const { debounceTime } = this.state;
 
-    const subscription = input$
-      .merge(focus$)
+    const subscription = Rx.Observable
+      .merge(input$, focus$)
       .debounceTime(debounceTime)
       .takeUntil(rerun$)
       .takeUntil(cancel$)
       .subscribe((e) => {
-        let regExp = new RegExp(e.target.value)
-        this.setState({
-          matched: CSSColors.filter(data => regExp.test(data))
-        })
+        let regExp = new RegExp(e.target.value);
+        this.setState({ matched: [] });
+
+        /* Take the top 10 searched result */
+        CSSColors$
+          .filter(data => regExp.test(data))
+          .take(10)
+          .subscribe(result => {
+            const { matched } = this.state;
+            matched.push(result);
+            this.setState({ matched })
+          })
       })
 
     this.setState({ subscription });
@@ -55,8 +65,12 @@ class AutoSearch extends Component {
     this.setState({ input: event.target.value });
   }
 
+  componentWillUnmount() {
+    this.state.subscription.unsubscribe();
+  }
+
   render() {
-    const { input, matched, debounceTime } = this.state;
+    const { input, matched } = this.state;
 
     return (
       <div className="AutoSearch">

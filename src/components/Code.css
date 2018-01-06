@@ -1,5 +1,4 @@
 .Code {
-  font-family: 'Oxygen Mono', monospace;
   font-size: 10pt;
   width: 100%;
   overflow: auto;
@@ -8,6 +7,10 @@
   box-sizing: border-box;
   padding: 10pt;
   margin: 0;
+}
+
+.Code > code {
+  font-family: 'Oxygen Mono', monospace;
 }
 
 /*
