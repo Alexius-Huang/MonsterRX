@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Title from '../components/Title';
 
 class AutoSave extends Component {
   render() {
     return (
       <div className="AutoSave">
-        This is the AutoSave page...
+        <Title>Auto Save Example</Title>
       </div>
     )
   }

@@ -1,0 +1,23 @@
+.Title {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border-left: 50pt solid #444;
+  border-bottom: 5pt solid #444;
+  height: 50pt;
+  line-height: 50pt;
+  padding-left: 70pt;
+}
+.Title:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-top: 50pt solid transparent;
+  border-bottom: 50pt solid transparent;
+  left: 0;
+  top: 0;
+  border-left: 50pt solid #444;
+  transform-origin: left center;
+  transform: rotate(-90deg);
+}

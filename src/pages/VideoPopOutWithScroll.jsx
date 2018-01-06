@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Title from '../components/Title';
 
 class VideoPopOutWithScroll extends Component {
   render() {
     return (
       <div className="VideoPopOutWithScroll">
-        This is the VideoPopOutWithScroll page...
+        <Title>Video Popout With Scroll Example</Title>
       </div>
     )
   }

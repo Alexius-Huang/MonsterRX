@@ -5,3 +5,30 @@
   background-color: #555;
   vertical-align: top;
 }
+
+.Main > div > .content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30pt 40pt;
+  overflow-y: auto;
+}
+
+.Main > div > .content > .row {
+  width: 100%;
+  font-size: 0;
+}
+
+.Main > div > .content > .row > .half,
+.Main > div > .content > .row > .full {
+  display: inline-block;
+  font-size: 12pt;
+  vertical-align: top;
+}
+
+.Main > div > .content > .row > .half {
+  width: 50%;
+}
+
+.Main > div > .content > .row > .full {
+  width: 100%;
+}

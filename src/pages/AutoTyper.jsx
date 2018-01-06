@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Title from '../components/Title';
 
 class AutoTyper extends Component {
   render() {
     return (
       <div className="AutoTyper">
-        This is the AutoTyper page...
+        <Title>Auto Typer Example</Title>
       </div>
     )
   }

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Title from '../components/Title';
 
 class AutoRetry extends Component {
   render() {
     return (
       <div className="AutoRetry">
-        This is the AutoRetry page...
+        <Title>Auto Retry Example</Title>
       </div>
     )
   }
