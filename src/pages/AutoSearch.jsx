@@ -95,6 +95,8 @@ class AutoSearch extends Component {
               </div>
               <ul className="list">
                 {
+                  matched.length === 0 ?
+                  <li>Empty Result</li>  :
                   matched.map((data, i) => <li key={i}>{data}</li>)
                 }
               </ul>

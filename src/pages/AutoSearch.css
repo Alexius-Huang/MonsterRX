@@ -44,6 +44,9 @@
   background-color: #777;
   transition: .25s;
 }
+.demo > ul {
+  border: 1pt solid #777;
+}
 .demo > ul.list {
   max-height: 300pt;
   overflow: auto;
